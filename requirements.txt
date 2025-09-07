@@ -1,0 +1,6 @@
+--index-url https://pypi.org/simple
+Flask
+python-dotenv
+Flask-Cors
+boto3
+PyJWT
