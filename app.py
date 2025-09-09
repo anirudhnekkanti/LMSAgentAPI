@@ -41,12 +41,12 @@ def generate_course_plan():
     # REFINED PROMPT: This prompt is highly specific to force the agent to return the exact JSON structure the frontend needs.
     prompt = (
         f"Your single task is to generate a JSON object for a learning plan for a user with {experience} of experience as a {tech_stack} who has joined {expected_role}. "
-        f"The plan must span 6 weeks.\n"
+        f"The plan must span 5 weeks.\n"
         f"The JSON object must have a root key 'content' which is an array of week objects.\n"
         f"Each week object in the array must have:\n"
         f"1. An 'id' (string, e.g., 'week1').\n"
         f"2. A 'title' (string, e.g., 'Week 1: Foundational Concepts').\n"
-        f"3. A 'tasks' key, which is an array of 3 to 5 task objects.\n"
+        f"3. A 'tasks' key, which is an array of 3 task objects.\n"
         f"Each task object must have:\n"
         f"1. An 'id' (string, e.g., 'task-1', 'task-2', and must be unique).\n"
         f"2. A 'title' (string, the name of the topic).\n"
